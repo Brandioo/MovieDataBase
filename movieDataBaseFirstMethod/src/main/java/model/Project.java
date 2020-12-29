@@ -2,7 +2,6 @@ package model;
 
 public class Project {
     private Integer projectId;
-
     private String description;
 
     public Project() {
@@ -40,6 +39,6 @@ public class Project {
         return "Project{" +
                 "projectId=" + projectId +
                 ", description='" + description + '\'' +
-                '}'+"\n";
+                '}' + "\n";
     }
 }

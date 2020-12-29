@@ -12,6 +12,10 @@ public class Employee {
     private int salary;
     private int departmentId;
 
+    public Employee(String firstName) {
+        this.firstName = firstName;
+    }
+
     public Employee(Integer employeeId, String firstName, String lastName, Date dateOfBirth, String phoneNumber, String email, int salary, int departmentId) {
         this.employeeId = employeeId;
         this.firstName = firstName;
@@ -24,12 +28,6 @@ public class Employee {
     }
 
 
-
-    public Employee(String firstName) {
-        this.firstName = firstName;
-    }
-
-
     public Employee(Integer employeeId, String firstName, String lastName, Date dateOfBirth, String phoneNumber, String email) {
         this.employeeId = employeeId;
         this.firstName = firstName;
@@ -39,6 +37,36 @@ public class Employee {
         this.email = email;
     }
 
+    public Employee(Integer employeeId, String lastName, Date dateOfBirth, String phoneNumber, String email, String firstName) {
+        this.employeeId = employeeId;
+        this.lastName = lastName;
+        this.dateOfBirth = dateOfBirth;
+        this.phoneNumber = phoneNumber;
+        this.email = email;
+        this.firstName = firstName;
+    }
+
+    public Employee(Integer employeeId, String firstName, String lastName, String phoneNumber, String email) {
+        this.employeeId = employeeId;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.phoneNumber = phoneNumber;
+        this.email = email;
+    }
+
+    public Employee(String firstName, String lastName, String phoneNumber, String email) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.phoneNumber = phoneNumber;
+        this.email = email;
+    }
+
+    public Employee(Integer employeeId, String lastName, String phoneNumber, String email) {
+        this.employeeId = employeeId;
+        this.lastName = lastName;
+        this.phoneNumber = phoneNumber;
+        this.email = email;
+    }
 
 
     public Integer getEmployeeId() {
@@ -89,36 +117,6 @@ public class Employee {
         this.email = email;
     }
 
-    public Employee(Integer employeeId, String lastName, Date dateOfBirth, String phoneNumber, String email,String firstName) {
-        this.employeeId = employeeId;
-        this.lastName = lastName;
-        this.dateOfBirth = dateOfBirth;
-        this.phoneNumber = phoneNumber;
-        this.email = email;
-        this.firstName=firstName;
-    }
-
-    public Employee(Integer employeeId, String firstName, String lastName, String phoneNumber, String email) {
-        this.employeeId = employeeId;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.phoneNumber = phoneNumber;
-        this.email = email;
-    }
-
-    public Employee(String firstName, String lastName, String phoneNumber, String email) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.phoneNumber = phoneNumber;
-        this.email = email;
-    }
-
-    public Employee(Integer employeeId, String lastName, String phoneNumber, String email) {
-        this.employeeId = employeeId;
-        this.lastName = lastName;
-        this.phoneNumber = phoneNumber;
-        this.email = email;
-    }
 
     public int getSalary() {
         return salary;
@@ -153,6 +151,6 @@ public class Employee {
                 ", email='" + email + '\'' +
                 ", salary=" + salary +
                 ", departmentId=" + departmentId +
-                '}'+"\n";
+                '}' + "\n";
     }
 }
